@@ -3,6 +3,7 @@ on: [pull_request]
 jobs:
   pluralith:
     runs-on: ubuntu-latest
+    environment: Pluralith
     env:
       working-directory: "examples/complete-vpc"
 
