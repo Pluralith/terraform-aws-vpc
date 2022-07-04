@@ -45,8 +45,8 @@ jobs:
         with:
           terraform-path: "${{ env.working-directory }}"
           show-changes: false
-          show-drift: true
-          show-costs: true # Requires Infracost to be set up in your pipeline
+          show-drift: false
+          show-costs: false # Requires Infracost to be set up in your pipeline
 
       # Post the generated diagram as a GitHub comment
       - name: Pluralith Comment
